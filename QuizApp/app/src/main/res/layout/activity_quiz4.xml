@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Quiz4"   android:padding="20dp"
+    >
+
+    <TextView
+        android:id="@+id/Quiz4Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/darkgray"
+        android:textSize="40dp"
+        android:text="Quiz 4" />
+
+    <ImageView
+        android:id="@+id/QuizImg4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/quiz4" />
+
+    <TextView
+        android:id="@+id/Question4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:text="En conduisant, je peux utuliser mon portable pour écrire un texto ou composer un numéro" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RadioButton
+            android:id="@+id/quiz4_rad1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Vrai" />
+
+        <RadioButton
+            android:id="@+id/quiz4_rad2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Faux" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/toScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:text="Suivant"
+        android:layout_margin="20dp"
+        />
+
+</LinearLayout>

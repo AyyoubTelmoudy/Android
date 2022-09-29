@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Quiz2"
+    android:padding="20dp"
+    >
+
+    <TextView
+        android:id="@+id/Quiz2Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/darkgray"
+        android:textSize="40dp"
+        android:text="Quiz 2" />
+
+    <ImageView
+        android:id="@+id/QuizImg2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/quiz2" />
+
+    <TextView
+        android:id="@+id/Question2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:text="Le panneau de danger indique une seccession des virrages dont le premier est :" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RadioButton
+            android:id="@+id/quiz2_rad1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="A droite" />
+
+        <RadioButton
+            android:id="@+id/quiz2_rad2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="A gauche" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/toQuiz3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:text="Suivant"
+        android:layout_margin="20dp"
+        />
+
+</LinearLayout>

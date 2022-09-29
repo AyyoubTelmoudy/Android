@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_margin="20dp"
+    >
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/LoginEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="1dp"
+        android:drawableLeft="@drawable/ic_email"/>
+
+    <EditText
+        android:id="@+id/LoginPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="1dp"
+        android:drawableLeft="@drawable/ic_password"/>
+
+    <Button
+        android:id="@+id/LoginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:backgroundTint="@color/gray"
+        android:textColor="@color/white"
+        android:layout_marginTop="1dp"
+        />
+
+    <TextView
+        android:id="@+id/ToRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To Register Click here"
+        android:layout_marginTop="10dp"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/ForgotPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password"
+        android:layout_marginTop="10dp"
+        android:gravity="center"/>
+</LinearLayout>
